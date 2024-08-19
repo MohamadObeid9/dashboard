@@ -10,6 +10,8 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/* overall layout */
 body{
     font-family:"robotoregular",sans-serif;
     display: grid;
@@ -29,6 +31,11 @@ body{
     grid-area:main;
     background-color: rgb(243, 240, 240);
 }
+
+
+/* sidebar section */
+
+
 .sidebar,button{
     background-color: #2563eb;
 }
@@ -38,6 +45,23 @@ body{
 .sidebar  img {
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(295deg) brightness(101%) contrast(101%);
 }
+
+
+/* header section */
+
+
+.header > *{
+    border:1px solid black;
+}
+.header-search,.header-profile{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+}
+
+
+/* main section */
+
+
 
 .main {
     display: grid;
