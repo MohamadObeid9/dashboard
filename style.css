@@ -10,3 +10,60 @@
   font-weight: normal;
   font-style: normal;
 }
+body{
+    font-family:"robotoregular",sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+    grid-template-rows: 1fr 4 fr;
+    grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+}
+.sidebar{
+    grid-area:sidebar;
+}
+.header{
+    grid-area:header;
+}
+.main{
+    grid-area:main;
+    background-color: rgb(243, 240, 240);
+}
+.sidebar,button{
+    background-color: #2563eb;
+}
+.sidebar  * , button{
+    color:#ffffff;
+}
+.sidebar  img {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(295deg) brightness(101%) contrast(101%);
+}
+
+.main {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr;
+    gap:15px;
+    grid-template-areas:
+    "main-left main-left main-right";
+}
+.main > .main-left {
+    grid-area:main-left;
+}
+.main > .main-right{
+    grid-area:main-right;
+}
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    grid-template-rows:repeat(auto-fit,minmax(150px,1fr));
+    gap:30px;
+}
+.card{
+    border:1px solid black;
+    background-color: white;
+}
+.main-right{
+    display:grid;
+    gap:30px;
+}
